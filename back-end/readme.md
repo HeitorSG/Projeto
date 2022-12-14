@@ -1,4 +1,4 @@
-#To use this project, you will need to have Node.js and npm installed on your computer.
+###To use this project, you will need to have Node.js and npm installed on your computer.
 
 Once you have those installed, follow these steps to get started:
 
