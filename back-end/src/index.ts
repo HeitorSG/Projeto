@@ -13,6 +13,8 @@ export const appDataSource = new DataSource({
   username:"postgres",
   password:"htr123",
   database: 'SoftLine',
+  synchronize: true,
+  entities: ["build/entity/*.js"],
 });
 
 
@@ -20,3 +22,9 @@ appDataSource.initialize();
  
 
 
+const run = async () => {
+  const connection = await appDataSource.initialize();
+  await app(port);
+};
+
+run();
