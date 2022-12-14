@@ -1,15 +1,19 @@
-import { Entity, Column } from 'typeorm';
+import { Entity, Column, Index} from 'typeorm';
 import { Record } from './Record';
+import { Length } from 'class-validator';
 
 @Entity()
 export class Produtos extends Record {
+  @Index({ unique: true })
   @Column("int")
   codigo: number;
 
   @Column()
+  @Length(3, 500)
   descricao: string;
 
   @Column()
+  @Length(3, 100)
   codBarras: string;
 
   @Column({
