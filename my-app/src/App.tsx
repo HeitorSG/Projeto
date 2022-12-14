@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { Page, usePage } from './contexts/Page';
 import { ProdutoIndex } from './pages/Produto';
+import { ClienteIndex } from './pages/Cliente';
 
 const App = () => {
   const { page } = usePage();
@@ -12,7 +13,7 @@ const App = () => {
       case Page.Produtos:
         return <ProdutoIndex/>;
       case Page.Clientes:
-        return <div>Clientes</div>;
+        return <ClienteIndex/>;
       default:
         return '';
     }

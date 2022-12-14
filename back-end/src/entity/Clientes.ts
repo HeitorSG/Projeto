@@ -13,7 +13,7 @@ export class Clientes extends Record {
     nome: string;
 
     @Column()
-    @Length(3, 75)
+    @Length(0, 75)
     fantasia: string;
 
     @Index({ unique: true })
