@@ -4,17 +4,18 @@ export interface Record{
 
 export interface Produto extends Record {
     id?: number;
-    productName: string;
-    description: string;
-    sellPrice: number;
-    grossWeight:number;
-    liquidWeight:number;
+    codigo: number;
+    descricao: string;
+    precoVenda: number;
+    pesoBruto:number;
+    pesoLiquido:number;
 }
 
 export interface Cliente extends Record {
     id?: number;
-    clientName:string;
-    fantasyName:string;
-    document:string;
-    address:string;
+    codigo: number;
+    nome: string;
+    fantasia: string;
+    documento: string;
+    endereco: string;
 }
