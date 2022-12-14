@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import { articlesRoutes } from './routes/produtos';
+import { produtosRoutes } from './routes/produtos';
+import { clientesRoutes } from './routes/clientes';
 
 export const app = async (port: number) => {
 
@@ -10,7 +11,8 @@ export const app = async (port: number) => {
   app.use(cors());
 
   const router = express.Router();
-  app.use(articlesRoutes(router));
+  app.use(produtosRoutes(router));
+  app.use(clientesRoutes(router));
 
   // start express server
   app.listen(port);

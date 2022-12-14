@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { produtosController } from '../controllers/produtos';
 
-export const articlesRoutes = (router: Router) => {
+export const produtosRoutes = (router: Router) => {
   const { findAll, findOne, create, update, remove } = produtosController();
 
   router.get('/produtos', findAll);
