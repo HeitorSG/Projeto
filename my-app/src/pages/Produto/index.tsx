@@ -9,6 +9,7 @@ export const ProdutoIndex: React.FC = () => {
     const emptyRecord = {
         codigo: 0,
         descricao: '',
+        codBarras: '',
         precoVenda: 0,
         pesoBruto: 0,
         pesoLiquido: 0,

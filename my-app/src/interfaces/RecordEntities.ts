@@ -6,6 +6,7 @@ export interface Produto extends Record {
     id?: number;
     codigo: number;
     descricao: string;
+    codBarras: string;
     precoVenda: number;
     pesoBruto:number;
     pesoLiquido:number;

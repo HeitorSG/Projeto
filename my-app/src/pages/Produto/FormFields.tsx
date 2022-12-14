@@ -27,6 +27,14 @@ export const ProdutoFormFields: React.FC<IProps> = ({
                     onChange={handleChange} />
             </div>
             <div>
+                <label>Código de Barras</label>
+                <input 
+                type="text"
+                name="codBarras"
+                value={formState.codBarras}
+                onChange={handleChange} />
+            </div>
+            <div>
                 <label>Preço de Venda</label>
                 <input
                     type="number"
