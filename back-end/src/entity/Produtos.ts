@@ -1,6 +1,17 @@
 import { Entity, Column, Index} from 'typeorm';
 import { Record } from './Record';
 import { Length } from 'class-validator';
+//CODIGO QUE DEFINE A TABELA PRODUTOS ELE GERA ALGO SEMELHANTE AO SQL ABAIXO:
+/*CREATE TABLE Produtos (
+  codigo INT NOT NULL,
+  descricao VARCHAR(500) NOT NULL,
+  codBarras VARCHAR(100) NOT NULL,
+  precoVenda DECIMAL(8,2) NOT NULL,
+  pesoBruto DECIMAL(8,2) NOT NULL,
+  pesoLiquido DECIMAL(8,2) NOT NULL,
+  PRIMARY KEY (codigo),
+  UNIQUE INDEX codigo_UNIQUE (codigo ASC)
+);*/
 
 @Entity()
 export class Produtos extends Record {

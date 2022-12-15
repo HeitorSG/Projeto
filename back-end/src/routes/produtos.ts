@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { produtosController } from '../controllers/produtos';
-
+//Rotas para produtos
 export const produtosRoutes = (router: Router) => {
   const { findAll, findOne, create, update, remove } = produtosController();
 

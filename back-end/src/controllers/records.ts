@@ -1,8 +1,8 @@
 import  { Request, Response } from 'express';
 import { Repository, FindOptionsWhere } from 'typeorm';
-import { IsEmail, validate } from 'class-validator';
+import {validate } from 'class-validator';
 
-
+//Codigo que faz toda manipulação do banco de dados para as entidades criadas
 
 
 export const recordsController = <T extends {id:number}>(repository: Repository<T>) => {
@@ -27,10 +27,6 @@ export const recordsController = <T extends {id:number}>(repository: Repository<
     const results = await repository.findOneBy({id: parseInt(req.params.id)} as FindOptionsWhere<T>);
     return res.send(results);
   });
-
-
-
- 
 
   const logout = wrap(async (req: Request, res: Response) => {
     

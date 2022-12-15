@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { clientesController } from '../controllers/Clientes';
-
+//Rotas para clientes
 export const clientesRoutes = (router: Router) => {
   const { findAll, findOne, create, update, remove } = clientesController();
 

@@ -7,14 +7,13 @@ export type user ={
   senha: string,
   nome: string,
 }
-
+//codigo de Login busca um email no repositorio e checa com o recebido
 
 export const loginController = <T extends {email: string}>(repository: Repository<T>) => {
   const login = async (req: Request, res: Response) => {
-    // return one record by id
+    // return one record by email
     let check: user;
       const results = await repository.findOne({where:{email:req.body.email} as FindOptionsWhere<T>});
-      //const results = await repository.findOneBy({email:req.body.email, senha:req.body.senha} as FindOptionsWhere<T>);
       if(results){
         check = JSON.parse(JSON.stringify(results));
         if(check.email === req.body.email){

@@ -5,7 +5,7 @@ import { loginController } from '../controllers/login';
 import { usersController } from '../controllers/users';
 import { Users } from '../entity/Users';
 
-
+//Rotas de usuario e de login
 export const loginRoutes = (router: Router) => {
     const { findAll, findOne, logout, create, update, remove } = usersController();
     const repository = appDataSource.getRepository(Users);
