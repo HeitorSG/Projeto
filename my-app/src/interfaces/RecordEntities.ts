@@ -20,3 +20,11 @@ export interface Cliente extends Record {
     documento: string;
     endereco: string;
 }
+
+export interface User extends Record {
+    id?: number;
+    nome?: string;
+    email: string;
+    senha: string;
+
+}

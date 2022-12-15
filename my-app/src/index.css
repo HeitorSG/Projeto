@@ -1,3 +1,9 @@
+.login {
+  margin: auto;
+  padding: 10px;
+  min-width: 500px;
+}
+
 
 code 
 * {
@@ -12,6 +18,8 @@ body {
   font-size: 18px;
   line-height: 1.2em;
 }
+
+
 
 html,
 body,
@@ -187,6 +195,7 @@ label {
 input[type='text'],
 input[type='submit'],
 input[type='number'],
+input[type='password'],
 button,
 select,
 textarea,
@@ -215,6 +224,13 @@ textarea {
   max-width: 500px;
 }
 
+input[type='password'],
+select,
+textarea {
+  width: 100%;
+  max-width: 500px;
+}
+
 input[type='submit'],
 button,
 a.button {
@@ -230,6 +246,13 @@ button.bt-new {
   background: transparent;
   border: 1px solid #0f0;
 }
+
+button.bt-login {
+  color: #f00;
+  background: transparent;
+  border: 1px solid #f00;
+  float: left;
+  }
 
 button.bt-remove {
   color: #f00;
@@ -293,6 +316,7 @@ button.bt-remove {
   input[type='text'],
   input[type='submit'],
   input[type='number'],
+  input[type='password'],
   button,
   select,
   textarea,
@@ -301,4 +325,6 @@ button.bt-remove {
     padding: 5px 10px;
     margin: 0 10px 10px 0;
   }
+
+
 }

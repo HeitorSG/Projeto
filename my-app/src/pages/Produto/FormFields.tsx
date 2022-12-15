@@ -1,4 +1,3 @@
-import { useFetch } from "../../hooks/useFetch";
 import { FormFieldsProps } from "../../interfaces/PageProps";
 import { Produto } from "../../interfaces/RecordEntities";
 

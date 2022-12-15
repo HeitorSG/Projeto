@@ -4,6 +4,7 @@ export enum Page {
     Login = 'Login',
     Produtos = 'Produtos',
     Clientes = 'Clientes',
+    Users = 'Users',
 }
 
 type ContextType = {
@@ -16,7 +17,7 @@ type children = {
 }
 
 const Context = createContext<ContextType>({
-    page: Page.Produtos,
+    page: Page.Login,
     setPage: (page: Page) => console.warn('no page provider'),
 });
 

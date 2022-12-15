@@ -4,6 +4,33 @@ import { Record } from '../interfaces/RecordEntities';
 
 export type Action<T> = (record: T) => Promise<void>;
 
+const api =  axios.create({
+    baseURL: process.env.REACT_APP_API
+});
+
+export const loginMutation = ()  =>({
+
+        signin: async (email:string, senha: string) => {
+            const response = await api.post('/userLogin', { email, senha })
+            console.log(response.data);
+            return response.data;
+        },
+
+        logout: async () => {
+            const response = await api.post('/userLogout');
+            return response.data;
+        },
+
+        validateUser: async (email: string | null, senha:string | null) => {
+            const response = await api.post('/userLogin', { email, senha })
+            console.log(response.data);
+            return response.data;
+        },
+    
+        
+})
+
+
 export const useMutation = <T extends Record>(
     path: string,
     callback?: Function,
@@ -40,6 +67,7 @@ export const useMutation = <T extends Record>(
     });
 
     const update: Action<T> = wrap(async (record: T) => {
+        console.log(record.id);
         await axios.put(`${url}/${record.id}`, record);
     });
 
@@ -47,6 +75,8 @@ export const useMutation = <T extends Record>(
         await axios.delete(`${url}/${record.id}`);
     });
 
+
+    
     return {
         create,
         update,
