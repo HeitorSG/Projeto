@@ -2,6 +2,8 @@
 
 To use this project, you will need to have Node.js and npm installed on your computer.
 
+Some variables need a .env file to work check .env.example
+
 Once you have those installed, follow these steps to get started:
 
 Clone the repository to your local machine
@@ -45,3 +47,5 @@ npm run build
 This will create a production-ready build of the project in the build directory.
 
 Thank you for using this project.
+
+
