@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Action } from './useMutations'; 
-
+//faz o controlador de formularios nas paginas de cadastro
 export type IChangeElement = 
     | HTMLInputElement
     | HTMLSelectElement

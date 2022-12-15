@@ -7,7 +7,7 @@ export type Action<T> = (record: T) => Promise<void>;
 const api =  axios.create({
     baseURL: process.env.REACT_APP_API
 });
-
+//codigo especifico para o login
 export const loginMutation = ()  =>({
 
         signin: async (email:string, senha: string) => {
@@ -30,7 +30,7 @@ export const loginMutation = ()  =>({
         
 })
 
-
+//Codigo de comunicação com o back para inserir, editar, visualizar, deletar
 export const useMutation = <T extends Record>(
     path: string,
     callback?: Function,

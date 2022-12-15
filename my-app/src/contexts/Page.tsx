@@ -1,5 +1,5 @@
 import React, {createContext, useContext, useState} from 'react';
-
+//contexto responsavel pelas paginas
 export enum Page {
     Login = 'Login',
     Produtos = 'Produtos',

@@ -3,7 +3,7 @@ import { RecordListProps } from '../../interfaces/PageProps';
 import { usePage } from '../../contexts/Page';
 import { Status } from '../../components/Status';
 import { RecordError } from '../../components/RecordError';
-
+//criador de lista
 export const RecordList = <T extends Record>({
     ListItem,
     records,

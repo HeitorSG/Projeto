@@ -7,7 +7,7 @@ import { UserIndex } from './pages/Users';
 
 const App = () => {
   const { page } = usePage();
-  
+  //render switch vai fazer a mudança de telas checando o estado de Page sempre
   const renderSwitch = () => {
     switch (page) {
       case Page.Login:

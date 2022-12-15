@@ -4,7 +4,7 @@ import { RecordIndexProps } from '../../interfaces/PageProps';
 import { useFetch } from '../../hooks/useFetch';
 import { RecordList } from './List';
 import { RecordMutations } from './Mutations';
-
+//estrutura padrao de records fazendo com que seja possivel adicionar mais entidades na interface sem muitos problemas
 export const RecordIndex = <T extends Record>({
     ListItem,
     apiPath,

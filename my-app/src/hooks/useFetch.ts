@@ -1,7 +1,7 @@
 import axios, { AxiosError } from 'axios';
 import { useState, useEffect } from 'react';
 import { Record } from '../interfaces/RecordEntities';
-
+//faz a busca no banco e envia para o gerador de lista
 export const useFetch = <T extends Record>(path: string, options?: {}) => {
     const [records, setRecords] =  useState<T[]>([]);
     const [version, setVersion] = useState(+new Date());

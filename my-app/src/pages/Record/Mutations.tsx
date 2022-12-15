@@ -6,7 +6,7 @@ import { RecordEdit } from './Edit';
 import { useMutation } from '../../hooks/useMutations';
 import { Status } from '../../components/Status';
 import { RecordError } from '../../components/RecordError';
-
+//responsavel pela comunicação com o banco envia novos inserções ou edita e remove atuais
 export const RecordMutations = <T extends Record>({
     FormFields,
     activeRecord,

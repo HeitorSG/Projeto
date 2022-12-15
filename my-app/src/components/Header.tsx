@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { AuthContext } from '../contexts/Auth';
 import { usePage, Page } from '../contexts/Page';
-
+//header da paginas de produto e clientes
 export const Header: React.FC = () => {
     const { page, setPage } = usePage();
     const auth = useContext(AuthContext);

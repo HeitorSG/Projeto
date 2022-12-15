@@ -2,7 +2,7 @@ import { Cliente } from '../../interfaces/RecordEntities';
 import { RecordIndex } from '../Record';
 import { ClienteListItem } from './ListItem';
 import { ClienteFormFields } from './FormFields';
-
+//estrutura principal de pagina do cliente
 export const ClienteIndex: React.FC = () => {
     const apiOptions = {};
 

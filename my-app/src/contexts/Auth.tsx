@@ -1,7 +1,7 @@
 import {createContext, useEffect, useState} from 'react';
 import { loginMutation } from '../hooks/useMutations';
 import { User } from '../interfaces/RecordEntities';
-
+//contexto responsavel pela autenticação checa se está logado e afins
 export type AuthContextType = {
     user: User | null;
     signin: (email: string, password: string) => Promise<boolean>;

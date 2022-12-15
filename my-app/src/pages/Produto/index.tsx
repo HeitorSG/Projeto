@@ -2,7 +2,7 @@ import { Produto } from '../../interfaces/RecordEntities';
 import { RecordIndex } from '../Record';
 import { ProdutoListItem } from './ListItem';
 import { ProdutoFormFields } from './FormFields';
-
+//estrutura principal de pagina de produtos
 export const ProdutoIndex: React.FC = () => {
     const apiOptions = {};
 
