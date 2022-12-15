@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Look at .env.example and create a .env REACT_APP_API = http://localhost:4000
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
